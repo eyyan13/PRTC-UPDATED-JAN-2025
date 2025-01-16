@@ -51,9 +51,61 @@
   }
   
   /* Responsive Adjustments */
+/* General styles for the container and image */
+
+
+.container .text-center img {
+    width: 25rem; /* Default width */
+    margin-top: -90px; /* Default margin */
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 576px) {
+    .container .text-center img {
+        width: 15rem; /* Smaller width for mobile */
+        margin-top: -50px; /* Reduce negative margin */
+        float: left;
+        margin-left: -50px
+    }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container .text-center img {
+        width: 20rem; /* Adjust width for tablets */
+        margin-top: -70px; /* Adjust negative margin */
+        float: left;
+        margin-left: -50px
+    }
+}
+
+/* Media query for large screens (e.g., laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container .text-center img {
+        width: 23rem; /* Slightly smaller width for laptops */
+        margin-top: -80px; /* Adjust negative margin */
+     
+    }
+}
+
+/* Media query for extra-large screens (e.g., LCD monitors) */
+@media (min-width: 1201px) {
+    .container .text-center img {
+        width: 30rem; /* Larger width for big screens */
+        margin-top: -100px; /* Increase negative margin */
+      
+    }
+}
 
   
-  
+  @media (min-width: 1200px) {
+    #carouselProfessional {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
 
 .fw-medium {
     font-weight: 600 !important;
